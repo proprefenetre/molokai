@@ -197,7 +197,7 @@ if &t_Co > 255
    hi Special         ctermfg=81
    if has("spell")
        hi SpellBad    ctermfg=9   ctermbg=None  cterm=underline
-       hi SpellCap                              cterm=underline
+       hi SpellCap    ctermfg=14  ctermbg=None  cterm=underline
        hi SpellLocal                            cterm=underline
        hi SpellRare                             cterm=underline
    endif
