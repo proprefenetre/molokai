@@ -198,8 +198,8 @@ if &t_Co > 255
    if has("spell")
        hi SpellBad    ctermfg=9   ctermbg=None  cterm=underline
        hi SpellCap    ctermfg=14  ctermbg=None  cterm=underline
-       hi SpellLocal                            cterm=underline
-       hi SpellRare                             cterm=underline
+       hi SpellLocal              ctermbg=None  cterm=underline 
+       hi SpellRare               ctermbg=None  cterm=underline
    endif
    hi Statement       ctermfg=161               cterm=bold
    hi StatusLine      ctermfg=238 ctermbg=253
