@@ -3,10 +3,7 @@
 " Author: Tomas Restrepo <tomas@winterdom.com>
 " https://github.com/tomasr/molokai
 "
-" Note: Based on the Monokai theme for TextMate
-" by Wimer Hazenberg and its darker variant
-" by Hamish Stuart Macpherson
-"
+" Note: includes personal tweaks
 
 hi clear
 
@@ -25,7 +22,6 @@ if exists("g:molokai_original")
 else
     let s:molokai_original = 0
 endif
-
 
 hi Boolean         guifg=#AE81FF
 hi Character       guifg=#E6DB74
@@ -93,7 +89,7 @@ hi StatusLineNC    guifg=#808080 guibg=#080808
 hi StorageClass    guifg=#FD971F               gui=italic
 hi Structure       guifg=#66D9EF
 hi Tag             guifg=#F92672               gui=italic
-hi Title           guifg=#ef5939
+hi Title           guifg=#A6E22E
 hi Todo            guifg=#FFFFFF guibg=bg      gui=bold
 
 hi Typedef         guifg=#66D9EF
@@ -116,7 +112,7 @@ if s:molokai_original == 1
    hi CursorLineNr    guifg=#FD971F               gui=none
    hi CursorColumn                  guibg=#3E3D32
    hi ColorColumn                   guibg=#3B3A32
-   hi LineNr          guifg=#BCBCBC guibg=#3B3A32
+   hi LineNr          guifg=#BCBCBC guibg=#272822
    hi NonText         guifg=#75715E
    hi SpecialKey      guifg=#75715E
 else
@@ -227,7 +223,7 @@ if &t_Co > 255
    hi Comment         ctermfg=59
    hi CursorColumn                ctermbg=236
    hi ColorColumn                 ctermbg=236
-   hi LineNr          ctermfg=250 ctermbg=236
+   hi LineNr          ctermfg=250 ctermbg=234
    hi NonText         ctermfg=59
 
    hi SpecialKey      ctermfg=59
@@ -265,7 +261,7 @@ if &t_Co > 255
        hi Visual                      ctermbg=238
 
        hi Comment         ctermfg=244
-       hi LineNr          ctermfg=239 ctermbg=235
+       hi LineNr          ctermfg=239 ctermbg=234
        hi NonText         ctermfg=239
        hi SpecialKey      ctermfg=239
    endif
