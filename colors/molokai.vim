@@ -73,7 +73,7 @@ hi Question        guifg=#66D9EF
 hi Repeat          guifg=#F92672               gui=bold
 hi Search          guifg=#000000 guibg=#FFE792
 " marks
-hi SignColumn      guifg=#A6E22E guibg=#232526
+hi SignColumn      guifg=#A6E22E guibg=bg
 hi SpecialChar     guifg=#F92672               gui=bold
 hi SpecialComment  guifg=#7E8E91               gui=bold
 hi Special         guifg=#66D9EF guibg=bg      gui=italic
@@ -112,7 +112,7 @@ if s:molokai_original == 1
    hi CursorLineNr    guifg=#FD971F               gui=none
    hi CursorColumn                  guibg=#3E3D32
    hi ColorColumn                   guibg=#3B3A32
-   hi LineNr          guifg=#BCBCBC guibg=#272822
+   hi LineNr          guifg=#BCBCBC guibg=bg
    hi NonText         guifg=#75715E
    hi SpecialKey      guifg=#75715E
 else
@@ -122,7 +122,7 @@ else
    hi CursorLineNr    guifg=#FD971F               gui=none
    hi CursorColumn                  guibg=#293739
    hi ColorColumn                   guibg=#232526
-   hi LineNr          guifg=#465457 guibg=#232526
+   hi LineNr          guifg=#465457 guibg=bg
    hi NonText         guifg=#465457
    hi SpecialKey      guifg=#465457
 end
@@ -156,7 +156,7 @@ if &t_Co > 255
    hi DiffDelete      ctermfg=162 ctermbg=53
    hi DiffText                    ctermbg=102 cterm=bold
 
-   hi Directory       ctermfg=118               cterm=bold
+   hi Directory       ctermfg=166               cterm=bold
    hi Error           ctermfg=219 ctermbg=89
    hi ErrorMsg        ctermfg=199 ctermbg=16    cterm=bold
    hi Exception       ctermfg=118               cterm=bold
@@ -191,15 +191,15 @@ if &t_Co > 255
    hi Search          ctermfg=0   ctermbg=222   cterm=NONE
 
    " marks column
-   hi SignColumn      ctermfg=118 ctermbg=235
+   hi SignColumn      ctermfg=118 ctermbg=bg
    hi SpecialChar     ctermfg=161               cterm=bold
    hi SpecialComment  ctermfg=245               cterm=bold
    hi Special         ctermfg=81
    if has("spell")
-       hi SpellBad                ctermbg=52
-       hi SpellCap                ctermbg=17
-       hi SpellLocal              ctermbg=17
-       hi SpellRare  ctermfg=none ctermbg=none  cterm=reverse
+       hi SpellBad    ctermfg=9   ctermbg=None  cterm=underline
+       hi SpellCap                              cterm=underline
+       hi SpellLocal                            cterm=underline
+       hi SpellRare                             cterm=underline
    endif
    hi Statement       ctermfg=161               cterm=bold
    hi StatusLine      ctermfg=238 ctermbg=253
@@ -207,7 +207,7 @@ if &t_Co > 255
    hi StorageClass    ctermfg=208
    hi Structure       ctermfg=81
    hi Tag             ctermfg=161
-   hi Title           ctermfg=166
+   hi Title           ctermfg=118
    hi Todo            ctermfg=231 ctermbg=232   cterm=bold
 
    hi Typedef         ctermfg=81
@@ -223,15 +223,15 @@ if &t_Co > 255
    hi Comment         ctermfg=59
    hi CursorColumn                ctermbg=236
    hi ColorColumn                 ctermbg=236
-   hi LineNr          ctermfg=250 ctermbg=234
+   hi LineNr          ctermfg=250 ctermbg=bg
    hi NonText         ctermfg=59
 
    hi SpecialKey      ctermfg=59
 
    if exists("g:rehash256") && g:rehash256 == 1
-       hi Normal       ctermfg=252 ctermbg=234
-       hi CursorLine               ctermbg=236   cterm=none
-       hi CursorLineNr ctermfg=208               cterm=none
+       hi Normal          ctermfg=252 ctermbg=234
+       hi CursorLine                  ctermbg=236   cterm=none
+       hi CursorLineNr    ctermfg=208               cterm=none
 
        hi Boolean         ctermfg=141
        hi Character       ctermfg=222
@@ -261,7 +261,7 @@ if &t_Co > 255
        hi Visual                      ctermbg=238
 
        hi Comment         ctermfg=244
-       hi LineNr          ctermfg=239 ctermbg=234
+       hi LineNr          ctermfg=239 ctermbg=bg
        hi NonText         ctermfg=239
        hi SpecialKey      ctermfg=239
    endif
