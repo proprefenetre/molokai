@@ -61,7 +61,7 @@ hi ModeMsg         guifg=#E6DB74
 hi MoreMsg         guifg=#E6DB74
 hi Operator        guifg=#F92672
 
-hi Conceal         guifg=#66D9EF               gui=bold
+hi Conceal         guifg=#F92672 guibg=bg    gui=bold
 
 " complete menu
 hi Pmenu           guifg=#66D9EF guibg=#000000
@@ -175,12 +175,12 @@ if &t_Co > 255
    hi Macro           ctermfg=193
    hi SpecialKey      ctermfg=81
 
-   hi MatchParen      ctermfg=233  ctermbg=208 cterm=bold
+   hi MatchParen      ctermfg=233  ctermbg=208  cterm=bold
    hi ModeMsg         ctermfg=229
    hi MoreMsg         ctermfg=229
    hi Operator        ctermfg=161
 
-   hi Conceal         ctermfg=81               cterm=bold
+   hi Conceal         ctermfg=161   ctermbg=bg cterm=bold
 
    " complete menu
    hi Pmenu           ctermfg=81  ctermbg=16
