@@ -61,6 +61,8 @@ hi ModeMsg         guifg=#E6DB74
 hi MoreMsg         guifg=#E6DB74
 hi Operator        guifg=#F92672
 
+hi Conceal         guifg=#66D9EF               gui=bold
+
 " complete menu
 hi Pmenu           guifg=#66D9EF guibg=#000000
 hi PmenuSel                      guibg=#808080
@@ -177,6 +179,8 @@ if &t_Co > 255
    hi ModeMsg         ctermfg=229
    hi MoreMsg         ctermfg=229
    hi Operator        ctermfg=161
+
+   hi Conceal         ctermfg=81               cterm=bold
 
    " complete menu
    hi Pmenu           ctermfg=81  ctermbg=16
