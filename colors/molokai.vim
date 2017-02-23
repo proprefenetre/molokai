@@ -61,7 +61,7 @@ hi ModeMsg         guifg=#E6DB74
 hi MoreMsg         guifg=#E6DB74
 hi Operator        guifg=#F92672
 
-hi Conceal         guifg=#66D9EF               gui=bold
+hi Conceal         guifg=#F92672 guibg=bg    gui=bold
 
 " complete menu
 hi Pmenu           guifg=#66D9EF guibg=#000000
@@ -108,7 +108,7 @@ hi TabLineFill     guifg=#1B1D1E guibg=#1B1D1E
 hi TabLine         guibg=#1B1D1E guifg=#808080 gui=none
 
 if s:molokai_original == 1
-   hi Normal          guifg=#F8F8F2 guibg=#272822
+   hi Normal          guifg=#FFFDD0 guibg=#272822
    hi Comment         guifg=#75715E
    hi CursorLine                    guibg=#3E3D32
    hi CursorLineNr    guifg=#FD971F               gui=none
@@ -118,7 +118,7 @@ if s:molokai_original == 1
    hi NonText         guifg=#75715E
    hi SpecialKey      guifg=#75715E
 else
-   hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
+   hi Normal          guifg=#FFFDD0 guibg=#1B1D1E
    hi Comment         guifg=#7E8E91
    hi CursorLine                    guibg=#293739
    hi CursorLineNr    guifg=#FD971F               gui=none
@@ -175,12 +175,12 @@ if &t_Co > 255
    hi Macro           ctermfg=193
    hi SpecialKey      ctermfg=81
 
-   hi MatchParen      ctermfg=233  ctermbg=208 cterm=bold
+   hi MatchParen      ctermfg=233  ctermbg=208  cterm=bold
    hi ModeMsg         ctermfg=229
    hi MoreMsg         ctermfg=229
    hi Operator        ctermfg=161
 
-   hi Conceal         ctermfg=81               cterm=bold
+   hi Conceal         ctermfg=161   ctermbg=bg cterm=bold
 
    " complete menu
    hi Pmenu           ctermfg=81  ctermbg=16
