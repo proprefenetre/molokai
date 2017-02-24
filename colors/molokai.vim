@@ -134,11 +134,11 @@ end
 "
 if &t_Co > 255
    if s:molokai_original == 1
-      hi Normal                   ctermbg=234
+      hi Normal                   ctermbg=none
       hi CursorLine               ctermbg=235   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
    else
-      hi Normal       ctermfg=252 ctermbg=233
+      hi Normal       ctermfg=252 ctermbg=none
       hi CursorLine               ctermbg=234   cterm=none
       hi CursorLineNr ctermfg=208               cterm=none
    endif
@@ -180,7 +180,7 @@ if &t_Co > 255
    hi MoreMsg         ctermfg=229
    hi Operator        ctermfg=161
 
-   hi Conceal         ctermfg=161   ctermbg=bg cterm=bold
+   hi Conceal         ctermfg=161   ctermbg=none cterm=bold
 
    " complete menu
    hi Pmenu           ctermfg=81  ctermbg=16
@@ -195,7 +195,7 @@ if &t_Co > 255
    hi Search          ctermfg=0   ctermbg=222   cterm=NONE
 
    " marks column
-   hi SignColumn      ctermfg=118 ctermbg=bg
+   hi SignColumn      ctermfg=118 ctermbg=none
    hi SpecialChar     ctermfg=161               cterm=bold
    hi SpecialComment  ctermfg=245               cterm=bold
    hi Special         ctermfg=81
@@ -225,15 +225,15 @@ if &t_Co > 255
    hi WildMenu        ctermfg=81  ctermbg=16
 
    hi Comment         ctermfg=59
-   hi CursorColumn                ctermbg=236
-   hi ColorColumn                 ctermbg=236
-   hi LineNr          ctermfg=250 ctermbg=bg
-   hi NonText         ctermfg=59
+   hi CursorColumn                  ctermbg=236
+   hi ColorColumn                   ctermbg=236
+   hi LineNr          ctermfg=250   ctermbg=none
+   hi NonText         ctermfg=59    ctermbg=none
 
    hi SpecialKey      ctermfg=59
 
    if exists("g:rehash256") && g:rehash256 == 1
-       hi Normal          ctermfg=252 ctermbg=234
+       hi Normal          ctermfg=252 ctermbg=none
        hi CursorLine                  ctermbg=236   cterm=none
        hi CursorLineNr    ctermfg=208               cterm=none
 
@@ -265,7 +265,7 @@ if &t_Co > 255
        hi Visual                      ctermbg=238
 
        hi Comment         ctermfg=244
-       hi LineNr          ctermfg=239 ctermbg=bg
+       hi LineNr          ctermfg=239 ctermbg=none
        hi NonText         ctermfg=239
        hi SpecialKey      ctermfg=239
    endif
